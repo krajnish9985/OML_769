@@ -1,0 +1,6 @@
+Sun Nov 22 11:17:51 PM IST 2026 start: python run_generation.py --system S1 --data flores --lang mar --temperature 0.7  --gpu 6 < /dev/null > logs/bloomz_S1.log 2>&1
+Sun Nov 22 11:43:50 PM IST 2026 start: python run_generation.py --system S2 --rules surface --variant hard --tau 0.5 --tag surface_hard --data flores --lang mar --temperature 0.7  --gpu 6 < /dev/null > logs/bloomz_S2_surface.log 2>&1
+Mon Nov 23 01:32:58 AM IST 2026 start: python run_generation.py --system S2 --rules all --variant hard --tau 0.5 --tag all_hard --data flores --lang mar --temperature 0.7  --gpu 6 < /dev/null > logs/bloomz_S2_all.log 2>&1
+Mon Nov 23 05:18:08 AM IST 2026 start: python run_generation.py --system S3 --variant hard --tau 0.05 --tag hard_tau0.05 --data flores --lang mar --temperature 0.7  --gpu 6 < /dev/null > logs/bloomz_S3.log 2>&1
+Mon Nov 23 06:26:36 AM IST 2026 start: python run_generation.py --system S4 --variant hard --tau 0.3 --tag hard_tau0.3 --data flores --lang mar --temperature 0.7  --gpu 6 < /dev/null > logs/bloomz_S4.log 2>&1
+Mon Nov 23 07:23:57 AM IST 2026 all done

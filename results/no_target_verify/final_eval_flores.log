@@ -1,0 +1,15 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]
+S1       flores_mar   n 1012  words 15.20  %english 17.79  %looping 0.40  distinct2 0.84  accept 0.63  tok/s 15.35  tok/step 1.85  chrF++ 53.75  chrF++corpus 51.35  agr/100w 0.40  judge_ppl 10.81
+S2_surface_hard flores_mar   n 1012  words 40.22  %english 4.55  %looping 3.95  distinct2 0.83  accept 0.53  tok/s 11.81  tok/step 2.02  chrF++ 52.96  chrF++corpus 50.27  agr/100w 0.34  judge_ppl 10.74
+S2_all_hard flores_mar   n 1012  words 39.86  %english 4.45  %looping 3.85  distinct2 0.83  accept 0.52  tok/s 6.41  tok/step 2.00  chrF++ 52.67  chrF++corpus 50.16  agr/100w 0.28  judge_ppl 11.09
+S3_hard_tau0.05 flores_mar   n 1012  words 15.24  %english 17.89  %looping 0.49  distinct2 0.84  accept 0.61  tok/s 5.84  tok/step 1.74  chrF++ 51.30  chrF++corpus 49.10  agr/100w 0.40  judge_ppl 12.33
+S4_hard_tau0.3 flores_mar   n 1012  words 15.09  %english 17.79  %looping 0.20  distinct2 0.84  accept 0.62  tok/s 6.88  tok/step 1.81  chrF++ 53.36  chrF++corpus 51.19  agr/100w 0.37  judge_ppl 11.14
+
+system                          n      words   %english   %looping  distinct2     accept      tok/s   tok/step     chrF++chrF++corpus   agr/100w  judge_ppl
+--- flores_mar
+S1                           1012      15.20      17.79       0.40       0.84       0.63      15.35       1.85      53.75      51.35       0.40      10.81
+S2_surface_hard              1012      40.22       4.55       3.95       0.83       0.53      11.81       2.02      52.96      50.27       0.34      10.74
+S2_all_hard                  1012      39.86       4.45       3.85       0.83       0.52       6.41       2.00      52.67      50.16       0.28      11.09
+S3_hard_tau0.05              1012      15.24      17.89       0.49       0.84       0.61       5.84       1.74      51.30      49.10       0.40      12.33
+S4_hard_tau0.3               1012      15.09      17.79       0.20       0.84       0.62       6.88       1.81      53.36      51.19       0.37      11.14
+wrote results/final_table_flores.csv

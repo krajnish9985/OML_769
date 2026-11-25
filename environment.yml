@@ -1,0 +1,24 @@
+
+# PyTorch is NOT here: install it separately with pip (see README step 2),
+# so you get the CUDA build that matches your GPU driver.
+name: oml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - transformers>=4.45,<5
+      - accelerate>=1.0
+      - datasets>=2.19,<4
+      - huggingface_hub>=0.25
+      - sentencepiece
+      - stanza>=1.9
+      - indic-nlp-library
+      - conllu
+      - sacrebleu>=2.4
+      - pandas
+      - tqdm
+      - scikit-learn
+      - matplotlib
+ 

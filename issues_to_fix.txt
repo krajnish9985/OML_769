@@ -1,0 +1,37 @@
+1) in S2 english output is still there need to be looked
+2) in S2 agreement error increased need --hoping it was noise.
+
+3) i have one question regarding evaluation of the generated output through which are deciding the output quality can you tell where are all the rules and what rules for each language is stored?
+
+Only one evaluation metric has language rules, the agreement-error count, and those rules live in agreement.py. Everything else in evaluate.py is the same formula for all three languages.
+
+Language-independent metrics, defined in evaluate.py
+
+Metric	How it’s computed
+%english	Share of letters in the language’s script. The ranges are in config.py → SCRIPT_RANGE: Devanagari for hin/mar, Tamil for tam. An output counts as English if less than 50% of its letters are in that script.
+%looping	Share of repeated word 4-grams. Above 0.3 (REPETITIVE at the top of the file) counts as looping.
+distinct2	Unique word pairs / all word pairs.
+chrF++	Character overlap with the reference answer, using sacrebleu. Only Dolly has references.
+judge_ppl	Perplexity under a stronger LM (--judge sarvamai/sarvam-1).
+accept, tok/s	Copied from the SD stats.
+
+Agreement errors (--stanza), rules in agreement.py → find_errors()
+
+Stanza parses the text, and the rules check the parse:
+
+Rule	hin	mar	tam
+subj_verb: subject vs verb (gender, number, person)	✓	✓	✓ (finite verbs only)
+adj_noun: inflecting adjective ending in -ा (बड़ा/बड़ी/बड़े) vs noun	✓	✓	✗
+ne_object: with ने, the verb agrees with the object	✓	✗	✗
+oblique: लड़का को → लड़के को	✓	✗	✗
+
+The per-language exceptions are also in find_errors(). They’re there to cut false alarms:
+
+hin/mar: Number isn’t checked for masculine nouns not ending in -ा (खिलाड़ी is the same in singular and plural).
+Hindi: skips subjects marked with ने or को. The NON_INFLECTING_A list covers words like राजा and पिता that don’t become oblique.
+Tamil: no Number check for neuter subjects, since a neuter plural with -கிறது is normal.
+All languages: pronouns are checked for gender only, and the checks skip proper nouns, words in lists, and numbers.
+
+Module A (S2) uses the same find_errors() during decoding. Its extra surface rules (broken matra, script mixing, repetition) are in modules/rules.py.
+
+As we found earlier, the agreement count is trustworthy for Hindi only. For mar/tam the parser is weak, so rely on MultiBLiMP plus hand checks there.

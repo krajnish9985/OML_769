@@ -1,0 +1,12 @@
+nohup: ignoring input
+dolly/mar 0/200  acc 0.61  7.8 tok/s  ' - Primary colors are red, yellow, blue. Red being the prima'
+dolly/mar 20/200  acc 0.89  19.7 tok/s  ' खाद्य, कृषी आणि मत्स्यव्यवसाय मंत्रालयाचे राजकीयदृष्ट्या नि'
+dolly/mar 40/200  acc 0.52  11.0 tok/s  '. select a sport flash card. choose your sport flash card. w'
+dolly/mar 60/200  acc 0.61  11.8 tok/s  ' EOS 500D is a compact, high-performance DSLR, and the new g'
+dolly/mar 80/200  acc 0.61  12.5 tok/s  ' ऑस्ट्रेलिया, कॅनडा, स्वित्झर्लंड, लक्झेंबर्ग, जर्मनी, फिनलं'
+dolly/mar 100/200  acc 0.94  19.6 tok/s  ' सर्वोत्कृष्ट चित्र, सर्वोत्कृष्ट दिग्दर्शक आणि डॅनियल क्वाण'
+dolly/mar 120/200  acc 0.58  10.5 tok/s  ' 2021 में, ओल्सन को न्यायाधीश बी. लिन विनमिल को सफल candidat'
+dolly/mar 140/200  acc 0.94  20.5 tok/s  ' डेनिस रॉबिन्स (प्रथम अध्यक्ष), बार्बरा कार्टलँड (प्रथम उपाध'
+dolly/mar 160/200  acc 0.59  11.2 tok/s  ', guinea pig, cat, dog, mouse, mouse fish, bat, snail and cr'
+dolly/mar 180/200  acc 0.65  11.3 tok/s  ', punjabois, gerbil, gerbil, gerbil, gerbil, gerbil, gerbil,'
+wrote /mnt/nas/krajnish/oml/results/S2_all_hard/dolly_mar.jsonl

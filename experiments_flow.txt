@@ -1,0 +1,80 @@
+LINGUISTIC-AWARE SPECULATIVE DECODING: EXPERIMENT FLOW
+
+1. LANGUAGES
+   Hindi, Marathi, Tamil.
+
+2. MODELS
+   Draft : bigscience/bloomz-560m
+   Target: bigscience/bloomz-7b1
+   Reason: same tokenizer, open weights, small documented Indic training data
+           (Hindi 24.6 GB, Tamil 8.0 GB, Marathi 1.8 GB in ROOTS).
+   Backup: Qwen2.5-0.5B/7B-Instruct, Llama-3.2-1B/3.1-8B-Instruct.
+
+3. DATA
+   Test prompts:
+     a. CohereLabs/aya_dataset            ~300 prompts per language (native prompts).
+        Append "answer in 5-6 sentences" in the prompt language.
+     b. CohereLabs/aya_evaluation_suite   dolly_machine_translated, ~200 prompts,
+        identical across languages (cross-language comparison).
+     c. jumelet/multiblimp                prefix up to the verb + correct/wrong verb
+        (hin 1447, mar 460, tam 382). Automatic agreement test.
+   Verifier training:
+     d. IndicCorp v2 clean sentences      for corruption data and POS n-gram model.
+     e. UD treebanks (Hindi HDTB, Marathi UFAL, Tamil TTB)  for rules/tagger checks.
+
+4. SYSTEMS COMPARED
+   S1 standard speculative decoding
+   S2 S1 + rule-based module
+   S3 S1 + statistical module
+   S4 S1 + deep-learning module
+
+5. SCORE INTEGRATION (same for all modules)
+   Each module returns L(prefix + candidate token) in [0,1].
+   Standard accept prob : a = min(1, p/q)     p = target prob, q = draft prob
+   Soft variant         : a = min(1, p/q) * L^alpha
+                          alpha = 0 -> module off; higher alpha -> stronger effect
+   Hard variant         : if L < tau: reject; else use standard a
+   On rejection: resample from the target residual distribution as usual.
+   Sweep: alpha in {0, 0.5, 1, 2}; tau in {0.1, 0.3, 0.5}.
+
+6. MODULE A: RULE-BASED
+   - Analyze prefix + candidate with Stanza / IndicNLP (POS + morph features).
+   - 10-15 rules per language:
+       subject-verb gender/number/person agreement
+       Hindi ne + perfective: verb agrees with object
+       adjective-noun agreement
+       oblique noun before postposition
+       script mixing, repeated tokens, broken matra
+   - L = 1 if no rule fires, else low value (or veto).
+
+7. MODULE B: STATISTICAL
+   - POS-tag ~1M IndicCorp sentences per language with Stanza.
+   - Train 4-gram KenLM model over tags with morph features (e.g. VERB|Fem|Sing).
+   - L = normalized P(new tag | previous 3 tags).
+
+8. MODULE C: DEEP LEARNING
+   - Build ~200k pairs per language: clean IndicCorp sentence vs auto-corrupted copy
+     (swap gender/number suffix, swap postposition, drop/duplicate token).
+   - Fine-tune MuRIL-base or IndicBERT-v2 as binary classifier on prefixes,
+     one model for all three languages.
+   - L = P(grammatical | prefix + candidate). Batch all draft tokens per step.
+
+9. METRICS
+   Quality:
+     bad-token acceptance rate (accepted tokens that introduce an error)
+     agreement errors per 100 words (dependency parse)
+     MultiBLiMP accuracy (correct vs wrong verb)
+     perplexity under a stronger Indic LM (judge != target)
+     chrF++ vs references (Dolly targets)
+     human fluency 1-5 on ~100 outputs per system, blind
+   Efficiency:
+     acceptance rate, tokens/sec, module overhead per step
+   Module check:
+     override rate + precision on 100 hand-labeled rejections
+
+10. RUN ORDER
+   1. Run S1 on all prompts; confirm errors exist.
+   2. Build module A; run S2; sweep tau.
+   3. Build module B; run S3; sweep alpha/tau.
+   4. Build module C; run S4; sweep alpha/tau.
+   5. Compare S1-S4 per language; plot quality vs speed.

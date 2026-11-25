@@ -1,0 +1,47 @@
+pair qwen: draft Qwen/Qwen2.5-0.5B-Instruct, target Qwen/Qwen2.5-7B-Instruct
+hin 0/1439
+hin 200/1439
+hin 400/1439
+hin 600/1439
+hin 800/1439
+hin 1000/1439
+hin 1200/1439
+hin 1400/1439
+
+=== hin: 1439 pairs ===
+  target prefers correct verb: 88.0%
+  draft  prefers correct verb: 73.9%
+  target by phenomenon: SP-# 90.0% (n=100)  SP-G 96.3% (n=107)  SV-# 81.3% (n=406)  SV-G 89.9% (n=415)  SV-P 90.3% (n=411)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1            12.2%         51.7%
+  S2             5.8%         37.5%    33.1 /  60.0 /   6.8%          49.8%             22.3%   (tau 0.5)
+  S3            10.8%         49.7%    59.3 /  18.5 /  22.2%          20.3%              5.4%   (tau 0.05)
+  S4             5.4%         51.5%    93.1 /   0.0 /   6.9%          61.4%              2.6%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results_qwen/multiblimp/hin.jsonl
+mar 0/458
+mar 200/458
+mar 400/458
+
+=== mar: 458 pairs ===
+  target prefers correct verb: 66.2%
+  draft  prefers correct verb: 67.7%
+  target by phenomenon: SV-# 56.1% (n=139)  SV-G 64.5% (n=220)  SV-P 83.8% (n=99)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1            20.9%         28.1%
+  S2            17.9%         27.9%    19.7 /  80.1 /   0.2%          21.2%              1.7%   (tau 0.5)
+  S3            20.2%         27.2%    34.7 /  56.8 /   8.5%           5.5%              2.0%   (tau 0.05)
+  S4             7.2%         27.1%    91.5 /   0.0 /   8.5%          67.7%              5.7%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results_qwen/multiblimp/mar.jsonl
+tam 0/382
+tam 200/382
+
+=== tam: 382 pairs ===
+  target prefers correct verb: 93.2%
+  draft  prefers correct verb: 82.7%
+  target by phenomenon: SV-# 94.4% (n=125)  SV-G 92.2% (n=193)  SV-P 93.8% (n=64)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1             5.3%         33.2%
+  S2             2.3%         26.4%    49.0 /  45.5 /   5.5%          68.6%             24.9%   (tau 0.5)
+  S3             4.1%         32.6%    87.7 /   6.3 /   6.0%          15.7%              3.4%   (tau 0.05)
+  S4             2.8%         33.2%    96.3 /   0.0 /   3.7%          72.5%              1.0%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results_qwen/multiblimp/tam.jsonl

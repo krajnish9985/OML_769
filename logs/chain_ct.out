@@ -1,0 +1,3 @@
+nohup: ignoring input
+started 5 jobs one after another on GPU 1 (pid 3429081). Progress: cat logs/bloomz_sequential_ct.log; tail -n 2 logs/*.log
+started 5 jobs one after another on GPU 1 (pid 3573538). Progress: cat logs/bloomz_sequential_ct.log; tail -n 2 logs/*.log

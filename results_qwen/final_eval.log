@@ -1,0 +1,71 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.52s/it]
+2026-11-22 10:25:02 ERROR: Cannot load model from /mnt/home/krajnish/.cache/stanza/1.15.0/resources/hi/mwt/default.pt
+S1       aya_hin      n 300  words 55.78  %english 1.33  %looping 0.00  distinct2 0.96  accept 0.67  tok/s 17.37  tok/step 2.60  chrF++ 23.12  agr/100w 0.35  judge_ppl 24.01
+S1       aya_mar      n 300  words 49.65  %english 1.00  %looping 0.00  distinct2 0.97  accept 0.64  tok/s 16.43  tok/step 2.45  chrF++ 15.04  agr/100w 0.73  judge_ppl 75.04
+S1       aya_tam      n 300  words 32.35  %english 1.33  %looping 0.33  distinct2 0.97  accept 0.71  tok/s 20.45  tok/step 2.80  chrF++ 14.27  agr/100w 0.53  judge_ppl 59.03
+S1       dolly_hin    n 200  words 147.07  %english 2.50  %looping 0.00  distinct2 0.88  accept 0.75  tok/s 20.28  tok/step 3.02  chrF++ 27.92  agr/100w 0.36  judge_ppl 11.58
+S1       dolly_mar    n 200  words 108.70  %english 0.50  %looping 0.00  distinct2 0.92  accept 0.73  tok/s 19.30  tok/step 2.87  chrF++ 25.89  agr/100w 0.41  judge_ppl 36.37
+S1       dolly_tam    n 200  words 89.65  %english 5.00  %looping 1.50  distinct2 0.91  accept 0.77  tok/s 22.90  tok/step 3.16  chrF++ 27.82  agr/100w 0.38  judge_ppl 26.86
+S2_surface_hard aya_hin      n 300  words 47.45  %english 45.67  %looping 0.00  distinct2 0.97  accept 0.60  tok/s 14.97  tok/step 2.27  chrF++ 16.37  agr/100w 0.37  judge_ppl 51.84
+S2_surface_hard aya_mar      n 300  words 48.55  %english 43.33  %looping 0.00  distinct2 0.97  accept 0.60  tok/s 15.69  tok/step 2.27  chrF++ 11.87  agr/100w 0.70  judge_ppl 79.37
+S2_surface_hard aya_tam      n 300  words 32.33  %english 80.67  %looping 0.00  distinct2 0.97  accept 0.59  tok/s 16.48  tok/step 2.24  chrF++ 6.89  agr/100w 0.37  judge_ppl 55.74
+S2_surface_hard dolly_hin    n 200  words 98.56  %english 46.00  %looping 1.00  distinct2 0.94  accept 0.65  tok/s 16.98  tok/step 2.49  chrF++ 18.32  agr/100w 0.53  judge_ppl 22.35
+S2_surface_hard dolly_mar    n 200  words 73.78  %english 51.50  %looping 0.00  distinct2 0.96  accept 0.64  tok/s 17.03  tok/step 2.46  chrF++ 16.96  agr/100w 0.41  judge_ppl 35.80
+S2_surface_hard dolly_tam    n 200  words 51.13  %english 91.50  %looping 0.00  distinct2 0.96  accept 0.62  tok/s 17.25  tok/step 2.35  chrF++ 9.16  agr/100w 0.44  judge_ppl 18.99
+S2_all_hard aya_hin      n 300  words 47.41  %english 46.00  %looping 0.00  distinct2 0.97  accept 0.60  tok/s 14.10  tok/step 2.26  chrF++ 16.12  agr/100w 0.32  judge_ppl 54.63
+S2_all_hard aya_mar      n 300  words 47.87  %english 48.67  %looping 0.00  distinct2 0.97  accept 0.59  tok/s 14.44  tok/step 2.25  chrF++ 11.74  agr/100w 0.47  judge_ppl 81.81
+S2_all_hard aya_tam      n 300  words 32.63  %english 80.33  %looping 0.00  distinct2 0.96  accept 0.59  tok/s 16.18  tok/step 2.24  chrF++ 6.80  agr/100w 0.39  judge_ppl 67.78
+S2_all_hard dolly_hin    n 200  words 95.53  %english 49.00  %looping 1.00  distinct2 0.94  accept 0.64  tok/s 15.16  tok/step 2.46  chrF++ 17.83  agr/100w 0.40  judge_ppl 21.69
+S2_all_hard dolly_mar    n 200  words 74.86  %english 51.00  %looping 0.00  distinct2 0.96  accept 0.64  tok/s 16.42  tok/step 2.44  chrF++ 16.86  agr/100w 0.43  judge_ppl 29.33
+S2_all_hard dolly_tam    n 200  words 50.37  %english 92.00  %looping 0.00  distinct2 0.97  accept 0.62  tok/s 16.87  tok/step 2.34  chrF++ 9.18  agr/100w 0.21  judge_ppl 21.43
+S3_hard_tau0.05 aya_hin      n 300  words 53.85  %english 15.67  %looping 0.33  distinct2 0.96  accept 0.65  tok/s 15.43  tok/step 2.48  chrF++ 21.10  agr/100w 0.43  judge_ppl 36.84
+S3_hard_tau0.05 aya_mar      n 300  words 46.79  %english 7.33  %looping 0.00  distinct2 0.97  accept 0.63  tok/s 15.72  tok/step 2.39  chrF++ 14.44  agr/100w 0.66  judge_ppl 88.69
+S3_hard_tau0.05 aya_tam      n 300  words 35.72  %english 11.33  %looping 0.67  distinct2 0.97  accept 0.69  tok/s 19.12  tok/step 2.70  chrF++ 13.44  agr/100w 0.64  judge_ppl 65.40
+S3_hard_tau0.05 dolly_hin    n 200  words 122.63  %english 22.00  %looping 1.00  distinct2 0.92  accept 0.71  tok/s 17.97  tok/step 2.78  chrF++ 24.31  agr/100w 0.35  judge_ppl 16.68
+S3_hard_tau0.05 dolly_mar    n 200  words 98.80  %english 14.00  %looping 1.00  distinct2 0.94  accept 0.70  tok/s 17.90  tok/step 2.71  chrF++ 23.32  agr/100w 0.39  judge_ppl 45.45
+S3_hard_tau0.05 dolly_tam    n 200  words 80.64  %english 22.00  %looping 0.00  distinct2 0.94  accept 0.74  tok/s 20.78  tok/step 2.95  chrF++ 24.13  agr/100w 0.37  judge_ppl 33.24
+S4_hard_tau0.3 aya_hin      n 300  words 55.24  %english 6.33  %looping 0.33  distinct2 0.96  accept 0.66  tok/s 16.97  tok/step 2.54  chrF++ 22.53  agr/100w 0.31  judge_ppl 29.87
+S4_hard_tau0.3 aya_mar      n 300  words 50.04  %english 5.33  %looping 0.33  distinct2 0.97  accept 0.63  tok/s 16.23  tok/step 2.41  chrF++ 14.76  agr/100w 0.58  judge_ppl 84.97
+S4_hard_tau0.3 aya_tam      n 300  words 32.96  %english 10.33  %looping 0.00  distinct2 0.97  accept 0.70  tok/s 19.90  tok/step 2.73  chrF++ 13.58  agr/100w 0.70  judge_ppl 62.63
+S4_hard_tau0.3 dolly_hin    n 200  words 137.95  %english 7.00  %looping 0.00  distinct2 0.90  accept 0.73  tok/s 19.54  tok/step 2.88  chrF++ 26.32  agr/100w 0.30  judge_ppl 13.97
+S4_hard_tau0.3 dolly_mar    n 200  words 104.03  %english 7.50  %looping 0.00  distinct2 0.93  accept 0.71  tok/s 18.57  tok/step 2.76  chrF++ 24.16  agr/100w 0.44  judge_ppl 37.93
+S4_hard_tau0.3 dolly_tam    n 200  words 82.83  %english 10.50  %looping 0.50  distinct2 0.93  accept 0.75  tok/s 22.05  tok/step 3.03  chrF++ 26.27  agr/100w 0.34  judge_ppl 31.44
+
+system                          n      words   %english   %looping  distinct2     accept      tok/s   tok/step     chrF++   agr/100w  judge_ppl
+--- aya_hin
+S1                            300      55.78       1.33       0.00       0.96       0.67      17.37       2.60      23.12       0.35      24.01
+S2_surface_hard               300      47.45      45.67       0.00       0.97       0.60      14.97       2.27      16.37       0.37      51.84
+S2_all_hard                   300      47.41      46.00       0.00       0.97       0.60      14.10       2.26      16.12       0.32      54.63
+S3_hard_tau0.05               300      53.85      15.67       0.33       0.96       0.65      15.43       2.48      21.10       0.43      36.84
+S4_hard_tau0.3                300      55.24       6.33       0.33       0.96       0.66      16.97       2.54      22.53       0.31      29.87
+--- aya_mar
+S1                            300      49.65       1.00       0.00       0.97       0.64      16.43       2.45      15.04       0.73      75.04
+S2_surface_hard               300      48.55      43.33       0.00       0.97       0.60      15.69       2.27      11.87       0.70      79.37
+S2_all_hard                   300      47.87      48.67       0.00       0.97       0.59      14.44       2.25      11.74       0.47      81.81
+S3_hard_tau0.05               300      46.79       7.33       0.00       0.97       0.63      15.72       2.39      14.44       0.66      88.69
+S4_hard_tau0.3                300      50.04       5.33       0.33       0.97       0.63      16.23       2.41      14.76       0.58      84.97
+--- aya_tam
+S1                            300      32.35       1.33       0.33       0.97       0.71      20.45       2.80      14.27       0.53      59.03
+S2_surface_hard               300      32.33      80.67       0.00       0.97       0.59      16.48       2.24       6.89       0.37      55.74
+S2_all_hard                   300      32.63      80.33       0.00       0.96       0.59      16.18       2.24       6.80       0.39      67.78
+S3_hard_tau0.05               300      35.72      11.33       0.67       0.97       0.69      19.12       2.70      13.44       0.64      65.40
+S4_hard_tau0.3                300      32.96      10.33       0.00       0.97       0.70      19.90       2.73      13.58       0.70      62.63
+--- dolly_hin
+S1                            200     147.07       2.50       0.00       0.88       0.75      20.28       3.02      27.92       0.36      11.58
+S2_surface_hard               200      98.56      46.00       1.00       0.94       0.65      16.98       2.49      18.32       0.53      22.35
+S2_all_hard                   200      95.53      49.00       1.00       0.94       0.64      15.16       2.46      17.83       0.40      21.69
+S3_hard_tau0.05               200     122.63      22.00       1.00       0.92       0.71      17.97       2.78      24.31       0.35      16.68
+S4_hard_tau0.3                200     137.95       7.00       0.00       0.90       0.73      19.54       2.88      26.32       0.30      13.97
+--- dolly_mar
+S1                            200     108.70       0.50       0.00       0.92       0.73      19.30       2.87      25.89       0.41      36.37
+S2_surface_hard               200      73.78      51.50       0.00       0.96       0.64      17.03       2.46      16.96       0.41      35.80
+S2_all_hard                   200      74.86      51.00       0.00       0.96       0.64      16.42       2.44      16.86       0.43      29.33
+S3_hard_tau0.05               200      98.80      14.00       1.00       0.94       0.70      17.90       2.71      23.32       0.39      45.45
+S4_hard_tau0.3                200     104.03       7.50       0.00       0.93       0.71      18.57       2.76      24.16       0.44      37.93
+--- dolly_tam
+S1                            200      89.65       5.00       1.50       0.91       0.77      22.90       3.16      27.82       0.38      26.86
+S2_surface_hard               200      51.13      91.50       0.00       0.96       0.62      17.25       2.35       9.16       0.44      18.99
+S2_all_hard                   200      50.37      92.00       0.00       0.97       0.62      16.87       2.34       9.18       0.21      21.43
+S3_hard_tau0.05               200      80.64      22.00       0.00       0.94       0.74      20.78       2.95      24.13       0.37      33.24
+S4_hard_tau0.3                200      82.83      10.50       0.50       0.93       0.75      22.05       3.03      26.27       0.34      31.44
+wrote results_qwen/final_table.csv

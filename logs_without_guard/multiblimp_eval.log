@@ -1,0 +1,51 @@
+2026-11-21 05:18:33 ERROR: Cannot load model from /mnt/home/krajnish/.cache/stanza/1.15.0/resources/hi/mwt/default.pt
+2026-11-21 05:18:37 ERROR: Cannot load model from /mnt/home/krajnish/.cache/stanza/1.15.0/resources/hi/mwt/default.pt
+The tokenizer you are loading from '/mnt/nas/krajnish/oml/data/classifier' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+hin 0/1439
+hin 200/1439
+hin 400/1439
+hin 600/1439
+hin 800/1439
+hin 1000/1439
+hin 1200/1439
+hin 1400/1439
+
+=== hin: 1439 pairs ===
+  target prefers correct verb: 91.0%
+  draft  prefers correct verb: 90.8%
+  target by phenomenon: SP-# 96.0% (n=100)  SP-G 96.3% (n=107)  SV-# 85.0% (n=406)  SV-G 88.2% (n=415)  SV-P 97.1% (n=411)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1            41.0%         54.3%
+  S2            30.4%         53.0%    26.4 /  72.8 /   0.8%          27.9%              2.4%   (tau 0.5)
+  S3            33.5%         51.9%    59.3 /  18.5 /  22.2%          20.3%              5.4%   (tau 0.05)
+  S4            16.1%         52.7%    93.1 /   0.0 /   6.9%          61.4%              2.6%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results/multiblimp/hin.jsonl
+The tokenizer you are loading from '/mnt/nas/krajnish/oml/data/classifier' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+mar 0/458
+mar 200/458
+mar 400/458
+
+=== mar: 458 pairs ===
+  target prefers correct verb: 63.8%
+  draft  prefers correct verb: 68.1%
+  target by phenomenon: SV-# 58.3% (n=139)  SV-G 56.8% (n=220)  SV-P 86.9% (n=99)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1            16.9%         15.5%
+  S2            11.6%         15.4%    19.4 /  80.6 /   0.0%          19.7%              0.2%   (tau 0.5)
+  S3            16.2%         15.0%    34.7 /  56.8 /   8.5%           5.5%              2.0%   (tau 0.05)
+  S4             5.1%         14.1%    91.5 /   0.0 /   8.5%          67.7%              5.7%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results/multiblimp/mar.jsonl
+The tokenizer you are loading from '/mnt/nas/krajnish/oml/data/classifier' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+tam 0/382
+tam 200/382
+
+=== tam: 382 pairs ===
+  target prefers correct verb: 93.7%
+  draft  prefers correct verb: 92.9%
+  target by phenomenon: SV-# 96.0% (n=125)  SV-G 91.2% (n=193)  SV-P 96.9% (n=64)
+  system bad accepted good accepted   L: prefers good / tie / prefers bad   bad caught (L<tau)   good vetoed
+  S1            13.7%         26.7%
+  S2            12.5%         26.4%    12.0 /  87.7 /   0.3%          12.3%              0.5%   (tau 0.5)
+  S3            13.1%         26.6%    87.7 /   6.3 /   6.0%          15.7%              3.4%   (tau 0.05)
+  S4             3.8%         26.7%    96.3 /   0.0 /   3.7%          72.5%              1.0%   (tau 0.3)
+  wrote /mnt/nas/krajnish/oml/results/multiblimp/tam.jsonl

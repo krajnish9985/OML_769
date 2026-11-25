@@ -1,0 +1,219 @@
+train 1200000 rows, dev 12000 rows
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google/muril-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+step 100/18750  loss 0.6927  9.0 it/s
+step 200/18750  loss 0.6932  9.4 it/s
+step 300/18750  loss 0.6924  9.8 it/s
+step 400/18750  loss 0.6131  9.9 it/s
+step 500/18750  loss 0.5574  10.0 it/s
+step 600/18750  loss 0.5034  10.1 it/s
+step 700/18750  loss 0.4600  10.2 it/s
+step 800/18750  loss 0.4196  10.3 it/s
+step 900/18750  loss 0.3907  10.3 it/s
+step 1000/18750  loss 0.3695  10.3 it/s
+step 1100/18750  loss 0.3693  10.4 it/s
+step 1200/18750  loss 0.2818  10.4 it/s
+step 1300/18750  loss 0.2523  10.4 it/s
+step 1400/18750  loss 0.4135  10.4 it/s
+step 1500/18750  loss 0.2699  10.4 it/s
+step 1600/18750  loss 0.3508  10.4 it/s
+step 1700/18750  loss 0.4263  10.4 it/s
+step 1800/18750  loss 0.3669  10.5 it/s
+step 1900/18750  loss 0.3292  10.5 it/s
+step 2000/18750  loss 0.3157  10.5 it/s
+[dev] step 2000  acc  all 0.860  mar 0.854  drop 0.687  tam 0.858  dup 0.968  hin 0.870  word 0.919  suffix 0.892
+[dev] tau 0.05: clean vetoed 1.1% / bad caught 60.8%  tau 0.1: clean vetoed 1.5% / bad caught 64.2%  tau 0.2: clean vetoed 2.5% / bad caught 68.2%  tau 0.3: clean vetoed 3.6% / bad caught 72.0%  tau 0.5: clean vetoed 8.3% / bad caught 80.4%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.860)
+step 2100/18750  loss 0.3236  9.8 it/s
+step 2200/18750  loss 0.2114  9.9 it/s
+step 2300/18750  loss 0.3717  9.9 it/s
+step 2400/18750  loss 0.3653  9.9 it/s
+step 2500/18750  loss 0.2884  10.0 it/s
+step 2600/18750  loss 0.2402  10.0 it/s
+step 2700/18750  loss 0.4225  10.0 it/s
+step 2800/18750  loss 0.2316  10.0 it/s
+step 2900/18750  loss 0.2766  10.0 it/s
+step 3000/18750  loss 0.3273  10.0 it/s
+step 3100/18750  loss 0.3060  10.1 it/s
+step 3200/18750  loss 0.3941  10.1 it/s
+step 3300/18750  loss 0.2710  10.1 it/s
+step 3400/18750  loss 0.4332  10.1 it/s
+step 3500/18750  loss 0.3713  10.1 it/s
+step 3600/18750  loss 0.2423  10.1 it/s
+step 3700/18750  loss 0.2151  10.1 it/s
+step 3800/18750  loss 0.2992  10.1 it/s
+step 3900/18750  loss 0.1727  10.1 it/s
+step 4000/18750  loss 0.2184  10.2 it/s
+[dev] step 4000  acc  all 0.866  mar 0.860  drop 0.679  tam 0.861  dup 0.981  hin 0.877  word 0.923  suffix 0.904
+[dev] tau 0.05: clean vetoed 0.7% / bad caught 61.9%  tau 0.1: clean vetoed 1.1% / bad caught 65.3%  tau 0.2: clean vetoed 1.9% / bad caught 69.2%  tau 0.3: clean vetoed 2.5% / bad caught 72.0%  tau 0.5: clean vetoed 4.8% / bad caught 78.0%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.866)
+step 4100/18750  loss 0.2753  9.8 it/s
+step 4200/18750  loss 0.2996  9.9 it/s
+step 4300/18750  loss 0.3245  9.9 it/s
+step 4400/18750  loss 0.3232  9.9 it/s
+step 4500/18750  loss 0.3428  9.9 it/s
+step 4600/18750  loss 0.3264  9.9 it/s
+step 4700/18750  loss 0.2301  9.9 it/s
+step 4800/18750  loss 0.2234  9.9 it/s
+step 4900/18750  loss 0.2781  9.9 it/s
+step 5000/18750  loss 0.1829  9.9 it/s
+step 5100/18750  loss 0.3378  10.0 it/s
+step 5200/18750  loss 0.3422  10.0 it/s
+step 5300/18750  loss 0.2514  10.0 it/s
+step 5400/18750  loss 0.3467  9.9 it/s
+step 5500/18750  loss 0.2957  9.9 it/s
+step 5600/18750  loss 0.2340  9.9 it/s
+step 5700/18750  loss 0.4099  9.9 it/s
+step 5800/18750  loss 0.2355  9.9 it/s
+step 5900/18750  loss 0.2855  9.9 it/s
+step 6000/18750  loss 0.2359  9.9 it/s
+[dev] step 6000  acc  all 0.872  mar 0.869  drop 0.684  tam 0.870  dup 0.982  hin 0.878  word 0.931  suffix 0.915
+[dev] tau 0.05: clean vetoed 0.6% / bad caught 65.0%  tau 0.1: clean vetoed 1.1% / bad caught 68.1%  tau 0.2: clean vetoed 1.9% / bad caught 71.4%  tau 0.3: clean vetoed 2.6% / bad caught 74.4%  tau 0.5: clean vetoed 5.5% / bad caught 79.9%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.872)
+step 6100/18750  loss 0.2906  9.7 it/s
+step 6200/18750  loss 0.4801  9.7 it/s
+step 6300/18750  loss 0.2263  9.7 it/s
+step 6400/18750  loss 0.2458  9.8 it/s
+step 6500/18750  loss 0.3242  9.8 it/s
+step 6600/18750  loss 0.3845  9.8 it/s
+step 6700/18750  loss 0.3287  9.8 it/s
+step 6800/18750  loss 0.2532  9.8 it/s
+step 6900/18750  loss 0.2193  9.8 it/s
+step 7000/18750  loss 0.4282  9.8 it/s
+step 7100/18750  loss 0.2952  9.8 it/s
+step 7200/18750  loss 0.2522  9.8 it/s
+step 7300/18750  loss 0.3365  9.9 it/s
+step 7400/18750  loss 0.3717  9.9 it/s
+step 7500/18750  loss 0.2306  9.9 it/s
+step 7600/18750  loss 0.2451  9.9 it/s
+step 7700/18750  loss 0.3364  9.9 it/s
+step 7800/18750  loss 0.1565  9.9 it/s
+step 7900/18750  loss 0.2400  9.9 it/s
+step 8000/18750  loss 0.2087  9.9 it/s
+[dev] step 8000  acc  all 0.879  mar 0.879  drop 0.709  tam 0.871  dup 0.977  hin 0.887  word 0.932  suffix 0.918
+[dev] tau 0.05: clean vetoed 0.7% / bad caught 65.2%  tau 0.1: clean vetoed 1.1% / bad caught 69.3%  tau 0.2: clean vetoed 2.1% / bad caught 73.4%  tau 0.3: clean vetoed 3.2% / bad caught 76.8%  tau 0.5: clean vetoed 6.3% / bad caught 82.1%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.879)
+step 8100/18750  loss 0.2271  9.8 it/s
+step 8200/18750  loss 0.1908  9.8 it/s
+step 8300/18750  loss 0.1993  9.8 it/s
+step 8400/18750  loss 0.2802  9.8 it/s
+step 8500/18750  loss 0.3046  9.8 it/s
+step 8600/18750  loss 0.2506  9.8 it/s
+step 8700/18750  loss 0.2026  9.8 it/s
+step 8800/18750  loss 0.2954  9.8 it/s
+step 8900/18750  loss 0.3595  9.8 it/s
+step 9000/18750  loss 0.2846  9.9 it/s
+step 9100/18750  loss 0.1627  9.9 it/s
+step 9200/18750  loss 0.3560  9.9 it/s
+step 9300/18750  loss 0.2787  9.9 it/s
+step 9400/18750  loss 0.2345  9.9 it/s
+step 9500/18750  loss 0.2282  9.9 it/s
+step 9600/18750  loss 0.1722  9.9 it/s
+step 9700/18750  loss 0.1776  9.9 it/s
+step 9800/18750  loss 0.2818  9.9 it/s
+step 9900/18750  loss 0.2835  9.9 it/s
+step 10000/18750  loss 0.2963  9.9 it/s
+[dev] step 10000  acc  all 0.883  mar 0.882  drop 0.715  tam 0.876  dup 0.975  hin 0.891  word 0.939  suffix 0.923
+[dev] tau 0.05: clean vetoed 0.7% / bad caught 67.7%  tau 0.1: clean vetoed 1.3% / bad caught 71.3%  tau 0.2: clean vetoed 2.2% / bad caught 75.0%  tau 0.3: clean vetoed 3.3% / bad caught 77.8%  tau 0.5: clean vetoed 6.4% / bad caught 83.0%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.883)
+step 10100/18750  loss 0.3910  9.8 it/s
+step 10200/18750  loss 0.2263  9.8 it/s
+step 10300/18750  loss 0.3200  9.8 it/s
+step 10400/18750  loss 0.2198  9.8 it/s
+step 10500/18750  loss 0.3557  9.8 it/s
+step 10600/18750  loss 0.2270  9.8 it/s
+step 10700/18750  loss 0.2887  9.9 it/s
+step 10800/18750  loss 0.3016  9.9 it/s
+step 10900/18750  loss 0.2285  9.9 it/s
+step 11000/18750  loss 0.2764  9.9 it/s
+step 11100/18750  loss 0.3217  9.9 it/s
+step 11200/18750  loss 0.3741  9.9 it/s
+step 11300/18750  loss 0.3337  9.9 it/s
+step 11400/18750  loss 0.2849  9.9 it/s
+step 11500/18750  loss 0.1940  9.9 it/s
+step 11600/18750  loss 0.3408  9.9 it/s
+step 11700/18750  loss 0.3081  9.9 it/s
+step 11800/18750  loss 0.2606  9.9 it/s
+step 11900/18750  loss 0.1925  9.9 it/s
+step 12000/18750  loss 0.1957  9.9 it/s
+[dev] step 12000  acc  all 0.884  mar 0.884  drop 0.724  tam 0.878  dup 0.974  hin 0.891  word 0.937  suffix 0.923
+[dev] tau 0.05: clean vetoed 1.0% / bad caught 69.9%  tau 0.1: clean vetoed 1.5% / bad caught 72.5%  tau 0.2: clean vetoed 2.4% / bad caught 76.0%  tau 0.3: clean vetoed 3.3% / bad caught 78.4%  tau 0.5: clean vetoed 6.5% / bad caught 83.3%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.884)
+step 12100/18750  loss 0.2249  9.8 it/s
+step 12200/18750  loss 0.2659  9.8 it/s
+step 12300/18750  loss 0.3841  9.8 it/s
+step 12400/18750  loss 0.2935  9.9 it/s
+step 12500/18750  loss 0.3020  9.9 it/s
+step 12600/18750  loss 0.1553  9.9 it/s
+step 12700/18750  loss 0.1901  9.9 it/s
+step 12800/18750  loss 0.1786  9.9 it/s
+step 12900/18750  loss 0.1678  9.9 it/s
+step 13000/18750  loss 0.3164  9.9 it/s
+step 13100/18750  loss 0.2483  9.9 it/s
+step 13200/18750  loss 0.2633  9.9 it/s
+step 13300/18750  loss 0.2946  9.9 it/s
+step 13400/18750  loss 0.2655  9.9 it/s
+step 13500/18750  loss 0.2044  9.9 it/s
+step 13600/18750  loss 0.3761  9.9 it/s
+step 13700/18750  loss 0.2560  9.9 it/s
+step 13800/18750  loss 0.1737  9.9 it/s
+step 13900/18750  loss 0.2214  9.9 it/s
+step 14000/18750  loss 0.2255  9.9 it/s
+[dev] step 14000  acc  all 0.883  mar 0.882  drop 0.731  tam 0.877  dup 0.965  hin 0.891  word 0.935  suffix 0.922
+[dev] tau 0.05: clean vetoed 1.0% / bad caught 70.7%  tau 0.1: clean vetoed 1.5% / bad caught 73.9%  tau 0.2: clean vetoed 2.7% / bad caught 77.6%  tau 0.3: clean vetoed 4.1% / bad caught 80.3%  tau 0.5: clean vetoed 8.4% / bad caught 85.1%
+step 14100/18750  loss 0.2429  9.9 it/s
+step 14200/18750  loss 0.2381  9.9 it/s
+step 14300/18750  loss 0.3082  9.9 it/s
+step 14400/18750  loss 0.2644  9.9 it/s
+step 14500/18750  loss 0.2747  9.9 it/s
+step 14600/18750  loss 0.2734  9.9 it/s
+step 14700/18750  loss 0.2543  9.9 it/s
+step 14800/18750  loss 0.2635  9.9 it/s
+step 14900/18750  loss 0.2028  9.9 it/s
+step 15000/18750  loss 0.3850  9.9 it/s
+step 15100/18750  loss 0.3462  9.9 it/s
+step 15200/18750  loss 0.2872  10.0 it/s
+step 15300/18750  loss 0.2421  10.0 it/s
+step 15400/18750  loss 0.2722  10.0 it/s
+step 15500/18750  loss 0.4082  10.0 it/s
+step 15600/18750  loss 0.3348  10.0 it/s
+step 15700/18750  loss 0.3301  10.0 it/s
+step 15800/18750  loss 0.1888  10.0 it/s
+step 15900/18750  loss 0.3057  10.0 it/s
+step 16000/18750  loss 0.2118  10.0 it/s
+[dev] step 16000  acc  all 0.886  mar 0.885  drop 0.725  tam 0.877  dup 0.975  hin 0.894  word 0.937  suffix 0.925
+[dev] tau 0.05: clean vetoed 0.7% / bad caught 68.7%  tau 0.1: clean vetoed 1.2% / bad caught 71.8%  tau 0.2: clean vetoed 1.9% / bad caught 75.3%  tau 0.3: clean vetoed 3.0% / bad caught 77.9%  tau 0.5: clean vetoed 6.3% / bad caught 83.4%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.886)
+step 16100/18750  loss 0.1928  9.9 it/s
+step 16200/18750  loss 0.2349  9.9 it/s
+step 16300/18750  loss 0.2334  9.9 it/s
+step 16400/18750  loss 0.1748  9.9 it/s
+step 16500/18750  loss 0.2136  9.9 it/s
+step 16600/18750  loss 0.1771  9.9 it/s
+step 16700/18750  loss 0.2491  9.9 it/s
+step 16800/18750  loss 0.2467  10.0 it/s
+step 16900/18750  loss 0.3424  10.0 it/s
+step 17000/18750  loss 0.2907  10.0 it/s
+step 17100/18750  loss 0.1924  10.0 it/s
+step 17200/18750  loss 0.2787  10.0 it/s
+step 17300/18750  loss 0.2492  10.0 it/s
+step 17400/18750  loss 0.1615  10.0 it/s
+step 17500/18750  loss 0.1427  10.0 it/s
+step 17600/18750  loss 0.2489  10.0 it/s
+step 17700/18750  loss 0.2111  10.0 it/s
+step 17800/18750  loss 0.2451  10.0 it/s
+step 17900/18750  loss 0.3313  10.0 it/s
+step 18000/18750  loss 0.2295  10.0 it/s
+[dev] step 18000  acc  all 0.886  mar 0.888  drop 0.724  tam 0.877  dup 0.977  hin 0.894  word 0.937  suffix 0.926
+[dev] tau 0.05: clean vetoed 0.6% / bad caught 68.3%  tau 0.1: clean vetoed 1.1% / bad caught 71.5%  tau 0.2: clean vetoed 1.9% / bad caught 75.5%  tau 0.3: clean vetoed 2.9% / bad caught 78.0%  tau 0.5: clean vetoed 6.2% / bad caught 83.5%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.886)
+step 18100/18750  loss 0.3206  9.9 it/s
+step 18200/18750  loss 0.2495  9.9 it/s
+step 18300/18750  loss 0.2369  9.9 it/s
+step 18400/18750  loss 0.2251  10.0 it/s
+step 18500/18750  loss 0.2655  10.0 it/s
+step 18600/18750  loss 0.2516  10.0 it/s
+step 18700/18750  loss 0.3180  10.0 it/s
+[dev] step 18750  acc  all 0.887  mar 0.888  drop 0.725  tam 0.877  dup 0.977  hin 0.894  word 0.937  suffix 0.927
+[dev] tau 0.05: clean vetoed 0.7% / bad caught 68.7%  tau 0.1: clean vetoed 1.1% / bad caught 71.8%  tau 0.2: clean vetoed 1.9% / bad caught 75.5%  tau 0.3: clean vetoed 3.1% / bad caught 78.1%  tau 0.5: clean vetoed 6.3% / bad caught 83.7%
+  saved /mnt/nas/krajnish/oml/data/classifier (best dev acc 0.887)

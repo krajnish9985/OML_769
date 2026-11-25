@@ -1,0 +1,6 @@
+Tue Nov 24 10:33:54 AM IST 2026 start: python run_generation.py --system S1 --tag ct --data aya dolly --lang hin mar tam --temperature 0.7  --check-target --gpu 1 < /dev/null > logs/bloomz_S1_ct.log 2>&1
+Tue Nov 24 01:16:03 PM IST 2026 start: python run_generation.py --system S2 --rules surface --variant hard --tau 0.5 --tag surface_hard_ct --data aya dolly --lang hin mar tam --temperature 0.7  --check-target --gpu 1 < /dev/null > logs/bloomz_S2_surface_ct.log 2>&1
+Tue Nov 24 09:21:58 PM IST 2026 start: python run_generation.py --system S2 --rules all --variant hard --tau 0.5 --tag all_hard_ct --data aya dolly --lang hin mar tam --temperature 0.7  --check-target --gpu 1 < /dev/null > logs/bloomz_S2_all_ct.log 2>&1
+Wed Nov 25 03:02:34 AM IST 2026 start: python run_generation.py --system S3 --variant hard --tau 0.05 --tag hard_tau0.05_ct --data aya dolly --lang hin mar tam --temperature 0.7  --check-target --gpu 1 < /dev/null > logs/bloomz_S3_ct.log 2>&1
+Wed Nov 25 06:15:26 AM IST 2026 start: python run_generation.py --system S4 --variant hard --tau 0.3 --tag hard_tau0.3_ct --data aya dolly --lang hin mar tam --temperature 0.7  --check-target --gpu 1 < /dev/null > logs/bloomz_S4_ct.log 2>&1
+Wed Nov 25 08:37:49 AM IST 2026 all done

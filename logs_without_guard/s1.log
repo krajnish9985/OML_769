@@ -1,0 +1,47 @@
+nohup: ignoring input
+aya/hin 0/300  acc 0.68  12.4 tok/s  ' 1683 में डच केफे में। बाद में 1683 में लंदन के डच केफे में।'
+aya/hin 20/300  acc 0.51  12.0 tok/s  ' यूरोप महाद्वीप पृथ्वी का सबसे बड़ा महाद्वीप है। यह कुल भौगो'
+aya/hin 40/300  acc 0.68  16.4 tok/s  ' महात्मा गांधी ने 12 मई 1930 को अहमदाबाद से चलकर अहमदाबाद से'
+aya/hin 60/300  acc 0.64  14.2 tok/s  ' महाराष्ट्र में ढलान वाले क्षेत्र छोटे हैं। यह प्रदेश पठार, '
+aya/hin 80/300  acc 0.63  11.8 tok/s  ' जेट स्ट्रीम भारत के दक्षिणी-पश्चिमी तटों से होते हुए समुद्र'
+aya/hin 100/300  acc 0.42  9.9 tok/s  ' इस श्रेणी की फिल्मों में समय यात्रा, भविष्य में लौटने की क्'
+aya/hin 120/300  acc 0.55  11.3 tok/s  ' स्वतंत्रता संग्राम के दौरान डॉ. आंबेडकर ने भारतीय भाषाओं के'
+aya/hin 140/300  acc 0.60  13.2 tok/s  ' भजू में जब अंग्रेज़ों ने ज़मींदारी को समाप्त किया तो अनेक क'
+aya/hin 160/300  acc 0.87  22.9 tok/s  ' डी - यूरोप में, सी - कांगो में, डी - यूरोप में, सी - कांगो '
+aya/hin 180/300  acc 0.53  10.5 tok/s  ' विविध विषयों पर चर्चा करने वाली एक बैठक का आयोजन किया गया थ'
+aya/hin 200/300  acc 0.71  14.2 tok/s  ' गलत काम का मतलब बुरे काम ही होता है. बुरे काम या गलत काम का'
+aya/hin 220/300  acc 0.67  11.9 tok/s  ' राहुल सांकृत्यायन को पद्म विभूषण से सम्मानित किया गया था। र'
+aya/hin 240/300  acc 0.75  14.8 tok/s  ' वह अक्सर बैलों के पास खेलती थी। वह उनकी सेवा करती थी। बैलों'
+aya/hin 260/300  acc 0.60  13.6 tok/s  ' जब किसी को बहुत ज्यादा खुश किया जाए, तो वह उस व्यक्ति से अध'
+aya/hin 280/300  acc 0.61  12.2 tok/s  ' एक समय-यात्रा साहसिक कार्य की कहानी को एक कहानी के रूप में '
+wrote /mnt/nas/krajnish/oml/results/S1/aya_hin.jsonl
+dolly/hin 0/200  acc 0.60  12.0 tok/s  ' Primary colors are all the colors that can be made by mixin'
+dolly/hin 20/200  acc 0.92  22.6 tok/s  ' 1896 में बनाए गए मंत्रालय को मूल रूप से कृषि मंत्रालय का ना'
+dolly/hin 40/200  acc 0.61  12.6 tok/s  ': children have great imagination, and they want to see the '
+dolly/hin 60/200  acc 0.61  12.9 tok/s  ' very exciting!" "I\'ve never been so excited," cried the boy'
+dolly/hin 80/200  acc 0.85  20.9 tok/s  ' जर्मनी, इटली, लक्समबर्ग, तुर्की, ऑस्ट्रेलिया, वियतनाम, कनाड'
+dolly/hin 100/200  acc 0.82  17.4 tok/s  ' द बॉय, द मोल, द फॉक्स एंड द हॉर्स, द एलिफेंट व्हिस्परर्स और'
+dolly/hin 120/200  acc 0.98  22.6 tok/s  ' 2017 में ओल्सन के इस्तीफा देने के बाद, वह प्रशांत नॉर्थवेस्'
+dolly/hin 140/200  acc 0.96  27.9 tok/s  ' यह पेशेवर निकाय है जो यूनाइटेड किंगडम में रोमांटिक कथा के ल'
+dolly/hin 160/200  acc 0.70  14.1 tok/s  ', simpanse, gorilla, giraffe, lion, zebra and giraffe शाकाहा'
+dolly/hin 180/200  acc 0.63  13.1 tok/s  ', punctuated bamboofish, seeds, bamboo, snake, whale shark, '
+wrote /mnt/nas/krajnish/oml/results/S1/dolly_hin.jsonl
+blimp/hin 0/1447  acc 0.50  5.4 tok/s  ' पड़ा था ।'
+blimp/hin 20/1447  acc 0.38  7.7 tok/s  ' रहा है। उनके पिता ने उनका नाम बदल कर ‘नारायण’ रख लिया था। व'
+blimp/hin 40/1447  acc 0.00  2.9 tok/s  ','
+blimp/hin 60/1447  acc 0.50  6.9 tok/s  ' पायी थी'
+blimp/hin 80/1447  acc 0.54  12.9 tok/s  ' सकता, then it would be repaired by the government.'
+blimp/hin 100/1447  acc 0.56  8.3 tok/s  ' सुरक्षा की गारंटी है कानून का?'
+blimp/hin 120/1447  acc 0.50  6.6 tok/s  ' सकती है।'
+blimp/hin 140/1447  acc 1.00  0.0 tok/s  ''
+blimp/hin 160/1447  acc 0.50  2.6 tok/s  ' to'
+blimp/hin 180/1447  acc 0.27  6.1 tok/s  ', but he heard the most from his parents.'
+blimp/hin 200/1447  acc 0.30  7.6 tok/s  ' थी, but the trial was still on.'
+Traceback (most recent call last):
+  File "/mnt/nas/krajnish/oml/run_generation.py", line 92, in <module>
+    main()
+  File "/mnt/nas/krajnish/oml/run_generation.py", line 78, in main
+    res = sd.generate(tok(r["_prompt"]).input_ids, seed=i)
+  File "/mnt/nas/krajnish/miniconda3/envs/oml/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 3072, in __call__
+    raise ValueError("You need to specify either `text` or `text_target`.")
+ValueError: You need to specify either `text` or `text_target`.
